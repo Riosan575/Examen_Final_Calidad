@@ -1,0 +1,28 @@
+﻿<div>
+    <form action="/cuenta/creartransaccion" method="post">
+        <div>
+            <h1>Crear Transacción</h1>
+        </div>
+        <input type="hidden" name="IdCuenta" value="@ViewBag.cuenta" />
+        @Html.ValidationMessage("Cuenta")
+    <div class="pb-2">
+        <select class="form-control" name="Categoria">
+            <option value="">--Seleccione Categoria---</option>
+            <option value="Gasto">Gasto</option>
+            <option value="Ingreso">Ingreso</option>
+        </select>
+        @Html.ValidationMessage("Categoria")
+    </div>
+    <div class="pb-2">
+        <input class="form-control" type="text" name="Descripcion" placeholder="Descripcion" />
+        @Html.ValidationMessage("Descripcion")
+    </div>
+    <div class="pb-2">
+        <input class="form-control" type="text" name="Monto" placeholder="Monto" />
+        @Html.ValidationMessage("Monto")
+    </div>
+        <div class="pb-2">
+            <button class="btn btn-primary">Crear</button>
+        </div>
+    </form>
+</div>

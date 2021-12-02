@@ -1,0 +1,26 @@
+﻿<div class="text-center">
+    <div>
+        <h1>Crear Cuenta</h1>
+    </div>
+    <form action="/cuenta/crearcuenta" method="post">
+        <div class="pb-2">
+            <input class="form-control" type="text" name="Nombre" value="" placeholder="Nombre de la cuenta" />
+            @Html.ValidationMessage("Nombre")
+        </div>
+        <div class="pb-2">
+            <select class="form-control" name="Categoria">
+                <option value="">---Seleccione Categoria de Cuenta---</option>
+                <option value="Propio">Propio</option>
+                <option value="Crédito">Crédito</option>
+            </select>
+            @Html.ValidationMessage("Tipo")
+        </div>
+        <div class="pb-2">
+            <input class="form-control" type="text" name="Saldo" placeholder="Monto" />
+            @Html.ValidationMessage("Saldo")
+        </div>
+        <div>
+            <button class="btn btn-primary">Crear</button>
+        </div>
+    </form>
+</div>

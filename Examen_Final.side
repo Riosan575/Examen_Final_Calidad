@@ -1,0 +1,647 @@
+{
+  "id": "1520162d-a40d-4ec2-aede-4406e731d3e1",
+  "version": "2.0",
+  "name": "Examen_Final",
+  "url": "https://localhost:44304",
+  "tests": [{
+    "id": "c3edd115-b9bb-47fa-ac4f-4de26048d1ae",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "900046ec-66d8-412b-a56d-07e91a68bc4c",
+    "name": "CrearCuentaTest",
+    "commands": [{
+      "id": "dac4c5ec-638f-4ae8-ac23-2912a66beaff",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "693627a9-0c43-484f-92d3-442dde484e18",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x916",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3eb4742-fc76-4fbf-9481-2270256f76c2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crear Cuenta",
+      "targets": [
+        ["linkText=Crear Cuenta", "linkText"],
+        ["css=.col > .clearfix > .float-right", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear Cuenta')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cuenta')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear Cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc1cf68a-467c-4c05-aab3-19a3a9a9fcb6",
+      "comment": "",
+      "command": "click",
+      "target": "name=Nombre",
+      "targets": [
+        ["name=Nombre", "name"],
+        ["css=.pb-2:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4be85d6e-c6b8-4ba4-ba47-cd43275af697",
+      "comment": "",
+      "command": "type",
+      "target": "name=Nombre",
+      "targets": [
+        ["name=Nombre", "name"],
+        ["css=.pb-2:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Banco MiBanco"
+    }, {
+      "id": "94858d0d-c058-4edf-9aed-319dd411fed1",
+      "comment": "",
+      "command": "click",
+      "target": "name=Categoria",
+      "targets": [
+        ["name=Categoria", "name"],
+        ["css=.pb-2:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//select[@name='Categoria']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0840b0d5-dbf2-4a0e-b2f2-e1f215365b99",
+      "comment": "",
+      "command": "select",
+      "target": "name=Categoria",
+      "targets": [],
+      "value": "label=Crédito"
+    }, {
+      "id": "55d41e54-7cd5-4e58-bbb2-25828add9a76",
+      "comment": "",
+      "command": "click",
+      "target": "name=Saldo",
+      "targets": [
+        ["name=Saldo", "name"],
+        ["css=.pb-2:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Saldo']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4102fcd7-3ebe-4781-b699-c7b6921f6e38",
+      "comment": "",
+      "command": "type",
+      "target": "name=Saldo",
+      "targets": [
+        ["name=Saldo", "name"],
+        ["css=.pb-2:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Saldo']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "350"
+    }, {
+      "id": "078bcdda-6cab-44d0-8ae1-d6959cf73e5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Crear')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "512e5100-c480-4f4a-ae08-9c2e8416ee6a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Crear Cuenta",
+      "targets": [
+        ["linkText=Crear Cuenta", "linkText"],
+        ["css=.col > .clearfix > .float-right", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear Cuenta')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cuenta')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear Cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3cbd511-65c3-4def-8549-c18840bf5e1a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6065b8ca-472a-40a3-b12f-6f89a4dfbd3b",
+    "name": "CargaPantallaGastos",
+    "commands": [{
+      "id": "02bd8eff-f37c-429d-8d79-61598c62b450",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f80eda7-d5cc-4557-a834-26caabfe815d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x916",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82a69398-0bbc-46ec-a509-fd746a3089a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col > .clearfix",
+      "targets": [
+        ["css=.col > .clearfix", "css:finder"],
+        ["xpath=//main/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69672269-4d13-4297-95f9-51adc0e773df",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lista de Gastos",
+      "targets": [
+        ["linkText=Lista de Gastos", "linkText"],
+        ["css=tr:nth-child(2) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Lista de Gastos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Cuenta/transacciones?id=3')]", "xpath:href"],
+        ["xpath=//td[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lista de Gastos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04192511-4f30-4b49-8dac-4e81f21e600a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Crear transacción",
+      "targets": [
+        ["linkText=Crear transacción", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear transacción')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cuenta/creartransaccion?id=3')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear transacción')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15363d3e-201a-4aeb-b107-a3d19d021424",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bfb4b2f9-8c3b-4585-9531-95f68b9af28f",
+    "name": "RealizarGastoTest",
+    "commands": [{
+      "id": "7af168b8-df54-4b1d-96e6-a42028009da0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6950e27-0c14-473a-9edf-19527a7bd7be",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x916",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d5c3a3a-01bc-4f10-b917-f5a49b585a48",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lista de Gastos",
+      "targets": [
+        ["linkText=Lista de Gastos", "linkText"],
+        ["css=tr:nth-child(2) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Lista de Gastos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Cuenta/transacciones?id=3')]", "xpath:href"],
+        ["xpath=//td[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lista de Gastos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21e60524-46b9-4beb-bf39-9c47367dfd2c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crear transacción",
+      "targets": [
+        ["linkText=Crear transacción", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear transacción')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cuenta/creartransaccion?id=3')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear transacción')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0fc0aa5a-d5ca-463a-aea0-ed5621e4b156",
+      "comment": "",
+      "command": "click",
+      "target": "name=Categoria",
+      "targets": [
+        ["name=Categoria", "name"],
+        ["css=.pb-2:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//select[@name='Categoria']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c65d21d9-0b94-40c0-8d5f-15bab020523d",
+      "comment": "",
+      "command": "select",
+      "target": "name=Categoria",
+      "targets": [],
+      "value": "label=Gasto"
+    }, {
+      "id": "c7daea2a-cc55-4086-861d-d9c7c92cc327",
+      "comment": "",
+      "command": "click",
+      "target": "name=Descripcion",
+      "targets": [
+        ["name=Descripcion", "name"],
+        ["css=.pb-2:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e78af25-ac0b-4ba6-8b90-583ac1ba3b73",
+      "comment": "",
+      "command": "type",
+      "target": "name=Descripcion",
+      "targets": [
+        ["name=Descripcion", "name"],
+        ["css=.pb-2:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "rifa"
+    }, {
+      "id": "9a43b972-df38-43b3-8493-5a30f0ee6d22",
+      "comment": "",
+      "command": "click",
+      "target": "name=Monto",
+      "targets": [
+        ["name=Monto", "name"],
+        ["css=.pb-2:nth-child(6) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Monto']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "906eca7b-1531-438b-928a-739dd63774f9",
+      "comment": "",
+      "command": "type",
+      "target": "name=Monto",
+      "targets": [
+        ["name=Monto", "name"],
+        ["css=.pb-2:nth-child(6) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Monto']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "400"
+    }, {
+      "id": "df4df130-a8c3-4f9e-bb58-04acbc88c9a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Crear')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1094aba-1f1c-4610-97c0-d8196d3b41b8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lista de Gastos",
+      "targets": [
+        ["linkText=Lista de Gastos", "linkText"],
+        ["css=tr:nth-child(2) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Lista de Gastos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Cuenta/transacciones?id=3')]", "xpath:href"],
+        ["xpath=//td[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lista de Gastos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05141fc8-1cc4-4de7-85cc-11e69edfa101",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Crear transacción",
+      "targets": [
+        ["linkText=Crear transacción", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear transacción')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cuenta/creartransaccion?id=3')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear transacción')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a10c3dff-6368-4e04-bec9-663435e7ae5d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a0d7163e-5539-4e9c-9c04-4e4b4b5f97ad",
+    "name": "RealizarIngresoTest",
+    "commands": [{
+      "id": "8b768dbd-5fe4-49aa-a108-81f90190a87a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01a12e37-8259-4c95-9bea-b5f2fee11017",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x916",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2556152a-b928-45b7-82e8-0d06793d77c4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lista de Gastos",
+      "targets": [
+        ["linkText=Lista de Gastos", "linkText"],
+        ["css=tr:nth-child(2) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Lista de Gastos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Cuenta/transacciones?id=3')]", "xpath:href"],
+        ["xpath=//td[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lista de Gastos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0240ef41-98ef-4f3f-8990-b710acbcab97",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crear transacción",
+      "targets": [
+        ["linkText=Crear transacción", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear transacción')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cuenta/creartransaccion?id=3')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear transacción')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b03f6f37-8e43-4a83-b4f6-d529bde035bd",
+      "comment": "",
+      "command": "click",
+      "target": "name=Categoria",
+      "targets": [
+        ["name=Categoria", "name"],
+        ["css=.pb-2:nth-child(4) > .form-control", "css:finder"],
+        ["xpath=//select[@name='Categoria']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59d3ea8f-9caa-4dc1-bd48-223787aa97b8",
+      "comment": "",
+      "command": "select",
+      "target": "name=Categoria",
+      "targets": [],
+      "value": "label=Ingreso"
+    }, {
+      "id": "9bff9132-efd6-4a27-9004-147f728524f7",
+      "comment": "",
+      "command": "click",
+      "target": "name=Descripcion",
+      "targets": [
+        ["name=Descripcion", "name"],
+        ["css=.pb-2:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "592fab6a-8bde-4a05-9833-0ebf8c901f25",
+      "comment": "",
+      "command": "type",
+      "target": "name=Descripcion",
+      "targets": [
+        ["name=Descripcion", "name"],
+        ["css=.pb-2:nth-child(5) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Descripcion']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "rifa"
+    }, {
+      "id": "ffc8432f-8597-451e-b331-2734b43397b6",
+      "comment": "",
+      "command": "click",
+      "target": "name=Monto",
+      "targets": [
+        ["name=Monto", "name"],
+        ["css=.pb-2:nth-child(6) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Monto']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f040ef56-c884-4310-8d39-5e527cdb13f6",
+      "comment": "",
+      "command": "type",
+      "target": "name=Monto",
+      "targets": [
+        ["name=Monto", "name"],
+        ["css=.pb-2:nth-child(6) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Monto']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "400"
+    }, {
+      "id": "f980ea7e-df1d-4ee3-b4b8-68dd4ec09e4b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Crear')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b660fe7-d69d-414b-a6e5-6a1050e71c99",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lista de Gastos",
+      "targets": [
+        ["linkText=Lista de Gastos", "linkText"],
+        ["css=tr:nth-child(2) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Lista de Gastos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Cuenta/transacciones?id=3')]", "xpath:href"],
+        ["xpath=//td[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lista de Gastos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d05a133e-0538-4167-9bd8-ed576b72a20e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Crear transacción",
+      "targets": [
+        ["linkText=Crear transacción", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear transacción')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cuenta/creartransaccion?id=3')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear transacción')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9c4a9d5-1a14-450b-9e96-fa2d2783b32c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "247405bb-8f72-4879-800c-edcd1fcc0246",
+    "name": "CargaPantallaCrearTransacción",
+    "commands": [{
+      "id": "5537da4d-3b91-40c1-b779-6013d8cb5788",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93b70370-f060-49da-b9c8-6cf86efbbd5c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x916",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b4dda7a-64da-438b-b415-fa971e665feb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lista de Gastos",
+      "targets": [
+        ["linkText=Lista de Gastos", "linkText"],
+        ["css=tr:nth-child(2) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Lista de Gastos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Cuenta/transacciones?id=3')]", "xpath:href"],
+        ["xpath=//td[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lista de Gastos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "191fa595-fc4b-4344-81ae-070fe32edd20",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crear transacción",
+      "targets": [
+        ["linkText=Crear transacción", "linkText"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear transacción')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cuenta/creartransaccion?id=3')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear transacción')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54035167-0aab-49b0-82c2-92fad14fc228",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Crear Transacción')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d5b9205-02be-4092-8580-ed3edbb33aca",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ca6a8da0-9cb3-41c3-97c0-20ffd80fb52c",
+    "name": "CargaPantallaCrearCuenta",
+    "commands": [{
+      "id": "daed93e3-a925-498f-b0ab-dfe26c275d81",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c07d0c2e-28a6-41cd-92c4-3428bc1b7168",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x916",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "355ccc1a-771c-4098-9572-5ec1ee2aa165",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Crear Cuenta",
+      "targets": [
+        ["linkText=Crear Cuenta", "linkText"],
+        ["css=.col > .clearfix > .float-right", "css:finder"],
+        ["xpath=//a[contains(text(),'Crear Cuenta')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cuenta')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Crear Cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ac94ef2-c1cc-441b-9cd5-b9e0cb956ae2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Crear Cuenta')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c53e1698-af7b-45f6-8e5a-30c9b5de7556",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3be9e94a-b956-4cfb-831c-569e1a5e0c31",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c3edd115-b9bb-47fa-ac4f-4de26048d1ae"]
+  }],
+  "urls": ["https://localhost:44304/"],
+  "plugins": []
+}

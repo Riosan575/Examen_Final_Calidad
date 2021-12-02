@@ -1,0 +1,36 @@
+﻿
+@{
+    var cuenta = (Cuenta)ViewBag.cuenta;
+}
+
+<h4>Monto: @string.Format("{0:N2}", cuenta.Saldo) S./</h4>
+<div class="row">
+    <div class="col">
+        <div class="clearfix">            
+            <a class="btn btn-primary float-right" href="/cuenta/creartransaccion?id=@cuenta.Id">Crear transacción</a>
+        </div>
+        <div class="clearfix">
+            <br />
+            <table class="table mt-2">
+                <tr>
+                    <th>Tipo</th>
+                    <th>Descripción</th>
+                    <th>Fecha</th>
+                    <th>Monto</th>
+                    <th></th>
+                </tr>
+                @foreach (var item in ViewBag.transaccion)
+                {
+                    <tr>
+                        <td>@item.Categoria</td>
+                        <td>@item.Descripcion</td>
+                        <td>@string.Format("{0:dd MMM yyyy hh:mm tt}", item.Fecha)</td>
+                        <td class="@(item.Categoria == " GASTO" ? "text-danger" : "text-success" )">
+                            @string.Format("{0:N2}", item.Monto) S./
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
